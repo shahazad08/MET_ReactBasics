@@ -1,15 +1,12 @@
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import React, { useState } from 'react';
-import Home from './components/Home';
-
-
-function App() {
-<<<<<<< HEAD
+ import React, { useState } from 'react';
+import logo from '../assets/img/Met_image.png';
+import '../App.css';
+function Home() {
   // useState hook replaces constructor + this.state
   const url = 'https://www.met.edu/';
   const [userName, setUserName] = useState('');
   const [nameError, setNameError] = useState('');
+
   //const [title] = useState('Hello from MET, and Welcome');
 
    // onClick handler
@@ -33,7 +30,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+     <div className="App">
      <h1>Hello {userName} from MET</h1>
       <img src={logo}
        onClick={onClick}
@@ -54,15 +51,8 @@ function App() {
   </p>
 </div>
     </div>
-=======
-  return (
-      <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
->>>>>>> UC8_react_router
   );
 }
 
-export default App;
+export default Home;
+   
