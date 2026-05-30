@@ -1,16 +1,16 @@
-import logo from './assets/img/Met_image.png';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React, { useState } from 'react';
-import './App.css';
+import Home from './components/Home';
+
 
 function App() {
-  // useState hook replaces constructor + this.state
-  const [title] = useState('Hello from MET, and Welcome');
   return (
-    <div className="App">
-      <h1>{title}</h1>
-      <img src={logo}
-        alt="MET Logo"/>
-    </div>
+      <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 

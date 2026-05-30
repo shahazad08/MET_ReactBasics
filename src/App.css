@@ -46,3 +46,24 @@ img {
   margin: 0 auto;
   width: 25%;
 }
+
+.info-section {
+  background-color: orange;       /* matches screenshot */
+  border: 2px solid blue;         /* blue border */
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;                    /* black text */
+  border-radius: 8px;             /* smooth corners */
+}
+
+.info-section p {
+  margin: 0;
+  text-align: justify;            /* neat paragraph alignment */
+}
+
+.info-section a {
+  color: blue;
+  text-decoration: underline;
+}
