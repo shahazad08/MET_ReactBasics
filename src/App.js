@@ -6,6 +6,7 @@ function App() {
   // useState hook replaces constructor + this.state
   const url = 'https://www.met.edu/';
   const [userName, setUserName] = useState('');
+  const [nameError, setNameError] = useState('');
   //const [title] = useState('Hello from MET, and Welcome');
 
    // onClick handler
@@ -14,10 +15,18 @@ function App() {
     window.open(url, "_blank");
   };
 
-   // onChange handler
+
+  // onChange handler with validation
   const onNameChange = (event) => {
     console.log("value is ", event.target.value);
+    const nameRegex = RegExp('^[A-Z]{1}[a-zA-Z\\s]{2,}$');
     setUserName(event.target.value);
+
+    if (nameRegex.test(event.target.value)) {
+      setNameError('');
+    } else {
+      setNameError('Name is Incorrect');
+    }
   };
 
   return (
@@ -28,6 +37,7 @@ function App() {
         alt="MET Logo"/>
         <div>
            <input onChange={onNameChange} />
+            <span className="error-output">{nameError}</span>
         </div>
     </div>
   );
