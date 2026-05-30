@@ -39,6 +39,17 @@ function App() {
            <input onChange={onNameChange} />
             <span className="error-output">{nameError}</span>
         </div>
+        <div className="info-section">
+  <p>
+    MET is a community of technologists, thinkers, and builders.  
+    We work to keep the tech employability of engineers alive and accessible,  
+    helping tech companies worldwide find contributors and creators for technology solutions.  
+    Collaboration and employability are essential for growth and our collective future.  
+    <br /><br />
+    To learn more, visit <a href="https://www.met.edu/" target="_blank" rel="noopener noreferrer">MET</a> —  
+    our mission is <strong>Employability to all</strong>.
+  </p>
+</div>
     </div>
   );
 }
