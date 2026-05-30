@@ -5,7 +5,8 @@ import './App.css';
 function App() {
   // useState hook replaces constructor + this.state
   const url = 'https://www.met.edu/';
-  const [title] = useState('Hello from MET, and Welcome');
+  const [userName, setUserName] = useState('');
+  //const [title] = useState('Hello from MET, and Welcome');
 
    // onClick handler
   const onClick = (event) => {
@@ -13,13 +14,21 @@ function App() {
     window.open(url, "_blank");
   };
 
+   // onChange handler
+  const onNameChange = (event) => {
+    console.log("value is ", event.target.value);
+    setUserName(event.target.value);
+  };
 
   return (
     <div className="App">
-      <h1>{title}</h1>
+     <h1>Hello {userName} from MET</h1>
       <img src={logo}
        onClick={onClick}
         alt="MET Logo"/>
+        <div>
+           <input onChange={onNameChange} />
+        </div>
     </div>
   );
 }
