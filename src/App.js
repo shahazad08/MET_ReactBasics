@@ -13,7 +13,7 @@ function App() {
         <Route path="/other" element={<OtherPage />} />
       </Routes>
     </Router>
->>>>>>> UC8_react_router
+
   );
 }
 

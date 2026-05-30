@@ -53,7 +53,7 @@ img {
   color: red;
 }
 
-<<<<<<< HEAD
+
 .error-output {
   margin-left: 10px;
   font-size: 12px;
@@ -61,8 +61,7 @@ img {
   color: red;
 }
 
-=======
->>>>>>> UC8_react_router
+
 .info-section {
   background-color: orange;       /* matches screenshot */
   border: 2px solid blue;         /* blue border */
@@ -82,7 +81,4 @@ img {
 .info-section a {
   color: blue;
   text-decoration: underline;
-<<<<<<< HEAD
-}
-=======
 }
