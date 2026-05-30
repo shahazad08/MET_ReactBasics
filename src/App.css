@@ -46,6 +46,12 @@ img {
   margin: 0 auto;
   width: 25%;
 }
+.error-output {
+  margin-left: 10px;
+  font-size: 12px;
+  font-style: italic;
+  color: red;
+}
 
 .info-section {
   background-color: orange;       /* matches screenshot */
@@ -66,4 +72,18 @@ img {
 .info-section a {
   color: blue;
   text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+nav a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
 }
